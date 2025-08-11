@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos de Búsqueda</title>
+    <link rel="stylesheet" href="../css/styles1.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="nav">
+        <h1>Algoritmos de Búsqueda</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="./algoritmo.html">Algortimos de Busqueda</a>
+            <a href="./grafos.html">Grafos</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <h2>Descubre los Algoritmos de Búsqueda</h2>
+        <p>Explora, aprende y visualiza cómo funcionan.</p>
+    </section>
+
+    <!-- Sección de Contenido con Video -->
+    <section class="contenido">
+        <div class="texto">
+            <h3>Algortimo de Busqueda Binaria</h3>
+            <p>
+                Eficiente para encontrar un elemento dentro de una lista ordenada, funcionando al dividir repetidamente 
+                la lista en mitades y comparar el valor buscado con el elemento central. Ayuda a optimizar el acceso a
+                la información en programas y bases de datos, reduciendo tiempo y recursos en búsquedas.
+            </p>
+        </div>
+        <div class="img">
+            <img src="" alt="">
+
+        </div>
+    </section>
+        <section class="informacion">
+    <h2>¿Qué es la Búsqueda Binaria?</h2>
+    <p>
+        La búsqueda binaria es un algoritmo eficiente para encontrar un elemento en una lista ordenada, 
+        reduciendo el espacio de búsqueda a la mitad en cada paso.
+    </p>
+
+    <h3>¿Cómo funciona?</h3>
+    <p>
+        1. Se ordena la lista (si no lo está).  
+        2. Se compara el valor buscado con el elemento central.  
+        3. Si es igual, se ha encontrado.  
+        4. Si es menor, se repite la búsqueda en la mitad izquierda.  
+        5. Si es mayor, se repite en la mitad derecha.  
+        Este proceso se repite hasta encontrar el valor o que no haya más elementos.
+    </p>
+
+    <h3>Características</h3>
+    <ul>
+        <li>Requiere lista ordenada.</li>
+        <li>Complejidad O(log n), mucho más rápido que la búsqueda lineal.</li>
+        <li>No recorre todos los elementos, solo los necesarios.</li>
+    </ul>
+
+    <h3>¿Para qué se usa?</h3>
+    <p>
+        Ideal para grandes volúmenes de datos ordenados, como diccionarios, bases de datos indexadas o listas estáticas.
+    </p>
+
+    <h3>Ventajas</h3>
+    <ul>
+        <li>Muy rápida en listas grandes.</li>
+        <li>Menos comparaciones que otros métodos.</li>
+    </ul>
+
+    <h3>Desventajas</h3>
+    <ul>
+        <li>Solo funciona con listas ordenadas.</li>
+        <li>Necesita cálculo de índices y división repetida.</li>
+    </ul>
+</section>
+
+        
+    
+    <section class="Prueba">
+    <h2>A continuación puedes hacer una prueba del algoritmo</h2>
+
+    <div class="contenido-prueba">
+        <h3>Búsqueda Binaria 🔍</h3>
+        <p><small>El arreglo se ordenará automáticamente (requerido para búsqueda binaria).</small></p>
+
+        <label>Arreglo (números separados por comas):</label><br>
+        <input type="text" id="arrayInput" value="7,2,9,1,5,4,8"><br><br>
+
+        <label>Valor a buscar:</label><br>
+        <input type="number" id="valorInput" value="5"><br><br>
+
+        <button id="startBtn">Iniciar Búsqueda</button>
+        <button id="resetBtn">Reiniciar</button>
+
+        <!-- Visualización del arreglo -->
+        <div class="array-container" id="array" style="margin: 20px auto; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;"></div>
+
+        <!-- Etiquetas de índices -->
+        <div class="array-indices" id="indices" style="margin: 5px auto; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; font-size: 0.9em; color: #555;"></div>
+
+        <!-- Resultado -->
+        <div id="resultado" class="resultado">
+            Ingresa un valor y haz clic en "Iniciar Búsqueda".
+        </div>
+    </div>
+</section>
+
+    </section>
+    
+    <section class="navegacionalgoritmos">
+    <button onclick="window.location.href='algoritmo1.html'">
+        <img src="../images/esquema-de-boton-circular-de-flecha-hacia-atras-izquierda.png" alt="anterior" class="icono-boton" />
+        Búsqueda Lineal
+    </button>
+
+    <button onclick="window.location.href='algoritmo3.html'">
+        Búsqueda de Interpolación
+        <img src="../images/flecha-correcta (1).png" alt="siguiente" class="icono-boton" />
+    </button>
+</section>
+
+    <script src="../js/BB.js"></script>
+
+</body>
+</html>

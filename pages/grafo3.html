@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos de Búsqueda</title>
+    <link rel="stylesheet" href="../css/styles1.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="nav">
+        <h1>Algoritmos de Búsqueda</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../pages/algoritmo.html">Algoritmos de Busqueda</a>
+            <a href="./grafos.html">Grafos</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <h2>Descubre los Algoritmos de Grafos</h2>
+        <p>Explora, aprende y visualiza cómo funcionan.</p>
+    </section>
+
+    <!-- Sección de Contenido con Video -->
+    <section class="contenido">
+        <div class="texto">
+            <h3>Algortimo de Grafo: Prim</h3>
+            <p>
+                Ayuda a construir redes eficientes partiendo de un nodo inicial, siendo muy útil
+                 en sistemas densos como redes internas de computadoras, circuitos eléctricos y 
+                 generación de gráficos en aplicaciones y videojuegos.  </p>
+        </div>
+        <div class="img">
+            <img src="" alt="">
+
+            
+        </div>
+
+    </section>
+
+    <section class="informacion">
+    <h2>¿Qué es Prim?</h2>
+    <p>
+        También encuentra el Árbol de Expansión Mínima (MST), pero lo hace creciendo desde un nodo inicial, 
+        añadiendo siempre la conexión más barata que une un nodo visitado con uno no visitado. </p>
+
+    <h3>¿Cómo funciona?</h3>
+    <p>
+        <li> Empieza en un nodo cualquiera.</li>
+        <li>Elige la arista más barata que conecta un nodo visitado con uno no visitado.</li>
+        <li>Repite hasta conectar todos los nodos.</li>
+</p>
+
+    <h3>Características</h3>
+    <ul>
+        <li>Encuentra el Árbol de Expansión Mínima (MST).</li>
+        <li>Crece desde un solo nodo.</li>
+        <li>Eficiente con colas de prioridad (heaps).</li>
+    </ul>
+
+    <h3>¿Para qué se usa?</h3>
+    <p>
+        Se utiliza para:
+        <ul>
+            <li>Construcción de redes óptimas comenzando desde un punto.</li>
+            <li>Sistemas de carreteras, redes de tuberías.</li>
+            
+        </ul>
+    </p>
+
+    <h3>Ventajas</h3>
+    <ul>
+        <li>Mejor rendimiento en grafos densos.</li>
+        <li>Más rápido que Kruskal si el grafo está representado con matriz de adyacencia.</li>
+        
+    </ul>
+
+    <h3>Desventajas</h3>
+    <ul>
+        <li>Depende de un nodo inicial (aunque el resultado final es el mismo).</li>
+        <li>Puede ser más lento que Kruskal en grafos dispersos.</li>
+    </ul>
+
+    <h2>Historia del Algoritmo de Prim</h2>
+    <p>
+        El algoritmo fue ideado inicialmente por el matemático checo 
+        <strong>Vojtěch Jarník</strong> en 1930, pero no tuvo mucha difusión. 
+        En 1957, <strong>Robert C. Prim</strong> lo redescubrió y lo aplicó 
+        en telecomunicaciones para <strong>conectar estaciones</strong> 
+        con el menor costo posible.  
+        En 1959, <strong>Edsger Dijkstra</strong> lo difundió ampliamente, 
+        por lo que también se le conoce como <em>Jarník-Prim-Dijkstra</em>. 
+        Hoy se utiliza en planificación de redes, ingeniería eléctrica, 
+        generación de mapas y diseño de circuitos.
+    </p>
+    
+</section>
+
+   <section class="graph-section">
+    <h2>🌳 Algoritmo de Prim - Animación Paso a Paso</h2>
+    <p>Introduce las aristas en formato: <code>u,v,peso</code> (una por línea)</p>
+    <textarea id="edges-prim" rows="5">
+A,B,1
+B,C,2
+A,C,3
+C,D,4
+    </textarea><br><br>
+    <button onclick="calcularPrim()">Calcular MST</button>
+    <button id="resetBtnPrim">Reiniciar</button>
+
+    <!-- Visualización del grafo -->
+    <div class="graph-container" style="text-align: center; margin: 20px 0;">
+        <svg id="graph-prim" width="600" height="400" 
+             style="border: 1px solid #ddd; background: #f9f9f9; display: block; margin: 20px auto;">
+            <!-- Nodos y aristas se dibujan aquí -->
+        </svg>
+    </div>
+
+    <!-- Resultado -->
+    <div id="prim-output" style="text-align: center; font-weight: bold; margin: 20px 0;">
+        Ingresa las aristas y haz clic en "Calcular MST".
+    </div>
+</section>
+
+
+    
+    
+    <script src="../js/grafoPrim.js"></script>
+
+</body>
+</html>

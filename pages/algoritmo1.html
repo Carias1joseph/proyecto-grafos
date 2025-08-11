@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos de Búsqueda</title>
+    <link rel="stylesheet" href="../css/styles1.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="nav">
+        <h1>Algoritmos de Búsqueda</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../pages/algoritmo.html">Algoritmos de Busqueda</a>
+            <a href="./grafos.html">Grafos</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <h2>Descubre los Algoritmos de Búsqueda</h2>
+        <p>Explora, aprende y visualiza cómo funcionan.</p>
+    </section>
+
+    <!-- Sección de Contenido -->
+    <section class="contenido">
+        <div class="texto">
+            <h3>Algortimo de Busqueda Lineal</h3>
+            <p>
+                En informática, la búsqueda lineal o la búsqueda secuencial
+                es un método para encontrar un valor objetivo dentro de una lista. 
+                Ésta comprueba secuencialmente cada elemento de la lista para el valor objetivo 
+                hasta que es encontrado o hasta que todos los elementos hayan sido comparados.
+            </p>
+        </div>
+        <div class="img">
+            <img src="../images/que-es-un-algoritmo-en-buscadores-1024x512.png" alt="">
+
+            
+        </div>
+
+    </section>
+
+    <section class="informacion">
+    <h2>¿Qué es la Búsqueda Lineal?</h2>
+    <p>
+        La búsqueda lineal, también llamada búsqueda secuencial, es un algoritmo simple para encontrar un elemento en una lista. 
+        Consiste en recorrer los elementos uno a uno desde el inicio hasta encontrar el valor buscado o llegar al final sin éxito.
+    </p>
+
+    <h3>¿Cómo funciona?</h3>
+    <p>
+        El algoritmo compara el valor objetivo con el primer elemento. 
+        Si no coincide, pasa al siguiente y así sucesivamente hasta encontrarlo o agotar la lista. 
+        Es un método directo que no requiere ordenar los datos.
+    </p>
+
+    <h3>Características</h3>
+    <ul>
+        <li>No requiere que la lista esté ordenada.</li>
+        <li>Tiempo de búsqueda proporcional al tamaño de la lista (O(n)).</li>
+        <li>Fácil de implementar y entender.</li>
+    </ul>
+
+    <h3>¿Para qué se usa?</h3>
+    <p>
+        Se utiliza cuando:
+        <ul>
+            <li>La lista es pequeña.</li>
+            <li>Los datos no están ordenados.</li>
+            <li>Se busca una implementación rápida y sencilla.</li>
+        </ul>
+    </p>
+
+    <h3>Ventajas</h3>
+    <ul>
+        <li>Funciona en listas ordenadas o no ordenadas.</li>
+        <li>No necesita memoria extra.</li>
+        <li>Implementación muy sencilla.</li>
+    </ul>
+
+    <h3>Desventajas</h3>
+    <ul>
+        <li>Lento en listas grandes.</li>
+        <li>En el peor caso revisa todos los elementos.</li>
+    </ul>
+</section>
+
+    
+    <section class="Prueba">
+
+    <h2>A continuación puedes hacer una prueba del algoritmo</h2>
+
+    <div class="contenido-prueba">
+    <h3>Búsqueda Lineal 🔍</h3>
+
+    <label>Arreglo (números separados por comas):</label><br>
+    <input type="text" id="arrayInput" value="5,3,8,4,2"><br><br>
+
+    <label>Valor a buscar:</label><br>
+    <input type="number" id="valorInput" value="4"><br><br>
+
+    <button id="startBtn">Iniciar Búsqueda</button>
+    <button id="resetBtn">Reiniciar</button>
+
+    <!-- Visualización del arreglo -->
+    <div class="array-container" id="array" style="margin: 20px auto; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;"></div>
+
+    <!-- Resultado -->
+    <div id="resultado" class="resultado">
+        Ingresa un valor y haz clic en "Iniciar Búsqueda".
+    </div>
+</div>
+
+    </section>
+
+    </section>
+<section class="navegacionalgoritmos">
+    <button onclick="window.location.href='algoritmo2.html'">
+        Búsqueda Binaria
+        <img src="../images/flecha-correcta (1).png" alt="siguiente" class="icono-boton" />
+    </button>
+</section>
+
+    
+    <script src="../js/app.js"></script>
+
+</body>
+</html>

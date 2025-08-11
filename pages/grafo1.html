@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos de Búsqueda</title>
+    <link rel="stylesheet" href="../css/styles1.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="nav">
+        <h1>Algoritmos de Búsqueda</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../pages/algoritmo.html">Algoritmos de Busqueda</a>
+            <a href="./grafos.html">Grafos</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <h2>Descubre los Algoritmos de Grafos</h2>
+        <p>Explora, aprende y visualiza cómo funcionan.</p>
+    </section>
+
+    <!-- Sección de Contenido-->
+    <section class="contenido">
+        <div class="texto">
+            <h3>Algortimo de Grafo: Kruskal</h3>
+            <p>
+                Es un algoritmo que permite construir redes óptimas minimizando el costo total 
+                de conexión, fundamental para diseñar sistemas eficientes de cableado, redes de 
+                comunicación y estructuras de datos en informática.
+            </p>
+        </div>
+        <div class="img">
+            <img src="" alt="">
+
+            
+        </div>
+
+    </section>
+
+    <section class="informacion">
+    <h2>¿Qué es Kruskal?</h2>
+    <p>
+        Es un algoritmo para encontrar el Árbol de Expansión Mínima (MST) de un grafo.
+        Funciona ordenando todas las conexiones de menor a mayor costo y eligiendo las que no formen ciclos hasta que todos los nodos estén conectados.
+    </p>
+
+    <h3>¿Cómo funciona?</h3>
+    <p>
+        <li> Ordena todas las aristas por peso (de menor a mayor).</li>
+        <li> Va añadiendo la arista más barata que no forme un ciclo.</li>
+        <li>Termina cuando todos los nodos están conectados.</li>
+             </p>
+
+    <h3>Características</h3>
+    <ul>
+        <li>No depende de un nodo inicial.</li>
+        <li>Usa la estructura Union-Find para evitar ciclos.</li>
+        <li>Encuentra el Árbol de Expansión Mínima (MST)</li>
+    </ul>
+
+    <h3>¿Para qué se usa?</h3>
+    <p>
+        Se utiliza para:
+        <ul>
+            <li>Diseñar redes (eléctrica, internet, agua) con el menor costo posible.</li>
+            <li>Optimizar cableado o tuberías</li>
+            
+        </ul>
+    </p>
+
+    <h3>Ventajas</h3>
+    <ul>
+        <li>Simple de entender.</li>
+        <li>Eficiente en grafos dispersos (pocas aristas).</li>
+        <li>Funciona en grafos no conexos (halla el bosque de expansión mínima).</li>
+    </ul>
+
+    <h3>Desventajas</h3>
+    <ul>
+        <li>Ordenar aristas puede ser costoso en grafos grandes</li>
+        <li>Menos eficiente en grafos muy densos.
+
+</li>
+    </ul>
+
+    <h2>Historia del Algoritmo de Kruskal</h2>
+  <p>
+    El algoritmo de Kruskal fue propuesto por Joseph B. Kruskal en 1956. Este matemático y estadístico estadounidense desarrolló este método para encontrar el Árbol de Expansión Mínima en un grafo, es decir, la forma de conectar todos los nodos con el menor costo posible sin formar ciclos. Desde entonces, su algoritmo se ha convertido en una herramienta fundamental en teoría de grafos y optimización, con aplicaciones en redes de computadoras, telecomunicaciones y planificación de infraestructuras. Su simplicidad y eficacia han hecho que sea uno de los algoritmos más enseñados y utilizados en informática.
+  </p>
+  
+</section>
+
+
+
+      <section class="kruskal-section">
+    <h2> Algoritmo de Kruskal - Animación </h2>
+    <p>
+        Ingresa las aristas en formato: <code>u,v,peso</code> (una por línea).<br>
+        Ejemplo: <code>A,B,4</code>
+    </p>
+
+    <div class="kruskal-input">
+        <label for="edges">Aristas del grafo:</label><br>
+        <textarea id="edges" rows="6" cols="50">
+A,B,4
+A,C,2
+B,C,1
+B,D,5
+C,D,3
+        </textarea><br>
+
+        <button onclick="calcularKruskal()">Iniciar Kruskal</button>
+        <button id="resetBtn">Reiniciar</button>
+    </div>
+
+    <!-- Visualización del grafo -->
+    <div class="graph-container">
+        <svg id="graph" width="600" height="400"></svg>
+    </div>
+
+    <!-- Resultado -->
+    <div id="kruskal-output">
+        Ingresa las aristas y haz clic en "Iniciar Kruskal".
+    </div>
+</section>
+
+    
+
+</body>
+
+
+    
+    <script src="../js/grafoKrustal.js"></script>
+</html>

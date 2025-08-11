@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos de Búsqueda</title>
+    <link rel="stylesheet" href="../css/styles1.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="nav">
+        <h1>Algoritmos de Búsqueda</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="./algoritmo.html">Algoritmos de Busqueda</a>
+            <a href="./grafos.html">Grafos</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <h2>Descubre los Algoritmos de Búsqueda</h2>
+        <p>Explora, aprende y visualiza cómo funcionan.</p>
+    </section>
+
+    <!-- Sección de Contenido con Video -->
+    <section class="contenido">
+        <div class="texto">
+            <h3>Algortimo de Busqueda de Interpolacion </h3>
+            <p>
+                 Método que estima la posición probable de un elemento dentro de una lista ordenada y distribuida uniformemente,
+                 calculando la posición basada en los valores mínimo y máximo. Aporta rapidez en sistemas de búsqueda y 
+                 recuperación de datos con distribuciones uniformes, 
+                 mejorando la eficiencia en la informática
+            </p>
+        </div>
+        <div class="img">
+            <img src="" alt="">
+        </div>
+
+         <section class="informacion">
+    <h2>¿Qué es la Búsqueda por Interpolación?</h2>
+    <p>
+        La búsqueda por interpolación es una mejora de la búsqueda binaria para listas ordenadas y uniformemente distribuidas. 
+        Utiliza una fórmula matemática para estimar la posición probable del valor buscado en lugar de elegir el punto medio.
+    </p>
+
+    <h3>¿Cómo funciona?</h3>
+    <p>
+        Calcula una posición estimada basándose en la relación entre el valor buscado y los valores extremos de la lista.  
+        Esto permite saltar directamente cerca de donde debería estar el elemento, reduciendo el número de comparaciones.
+    </p>
+
+    <h3>Características</h3>
+    <ul>
+        <li>Requiere lista ordenada y datos distribuidos de forma uniforme.</li>
+        <li>Puede ser más rápida que la binaria en ciertos casos (O(log log n) en el mejor caso).</li>
+        <li>En casos desfavorables puede acercarse a O(n).</li>
+    </ul>
+
+    <h3>¿Para qué se usa?</h3>
+    <p>
+        Es útil cuando los datos están bien distribuidos, como registros secuenciales numéricos o bases de datos con claves uniformes.
+    </p>
+
+    <h3>Ventajas</h3>
+    <ul>
+        <li>Más rápida que la búsqueda binaria en datos uniformes.</li>
+        <li>Menos comparaciones en promedio.</li>
+    </ul>
+
+    <h3>Desventajas</h3>
+    <ul>
+        <li>No funciona bien con datos muy dispersos o no uniformes.</li>
+        <li>Requiere cálculos adicionales.</li>
+    </ul>
+</section>
+
+        
+    
+        <section class="Prueba">
+    <h2>A continuación puedes hacer una prueba del algoritmo</h2>
+
+    <div class="contenido-prueba">
+        <h3>Búsqueda por Interpolación 📏</h3>
+        <p><small>El arreglo se ordenará automáticamente (requerido para interpolación).</small></p>
+
+        <label>Arreglo (números separados por comas):</label><br>
+        <input type="text" id="arrayInput" value="1,3,5,7,9,12,15,18,21"><br><br>
+
+        <label>Valor a buscar:</label><br>
+        <input type="number" id="valorInput" value="12"><br><br>
+
+        <button id="startBtn">Iniciar Búsqueda</button>
+        <button id="resetBtn">Reiniciar</button>
+
+        <!-- Visualización del arreglo -->
+        <div class="array-container" id="array" style="margin: 20px auto; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;"></div>
+
+        <!-- Etiquetas de índices -->
+        <div class="array-indices" id="indices" style="margin: 5px auto; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; font-size: 0.9em; color: #555;"></div>
+
+        <!-- Resultado -->
+        <div id="resultado" class="resultado">
+            Ingresa un valor y haz clic en "Iniciar Búsqueda".
+        </div>
+    </div>
+</section>
+
+    </section>
+
+    <section class="navegacionalgoritmos">
+    <button onclick="window.location.href='algoritmo2.html'">
+        <img src="../images/esquema-de-boton-circular-de-flecha-hacia-atras-izquierda.png" alt="anterior" class="icono-boton" />
+        Búsqueda Binaria
+    </button>
+</section>
+
+
+    
+    <script src="../js/B-Interpolar.js"></script>
+
+</body>
+</html>
